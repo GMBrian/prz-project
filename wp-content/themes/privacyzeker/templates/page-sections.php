@@ -62,12 +62,12 @@ if ( have_rows( 'secties' ) ):
 
 					<div class="row entry-content">
 
-						<div class="col-lg-7 col-md-6 col-sm-12">
-							<?= get_sub_field( 'afbeelding' ) ? '<img src="' . get_sub_field( 'afbeelding' ) . '">' : ''; ?>
+						<div class="col-lg-4 col-lg-push-8 col-md-5 col-md-push-7 col-sm-12 tekst-col">
+							<?= get_sub_field( 'tekst' ); ?>
 						</div>
 
-						<div class="col-lg-4 col-lg-push-1 col-md-6 col-sm-12 tekst-col">
-							<?= get_sub_field( 'tekst' ); ?>
+						<div class="col-lg-7 col-lg-pull-4 col-md-7 col-md-pull-5 col-md-6 col-sm-12">
+							<?= get_sub_field( 'afbeelding' ) ? '<img src="' . get_sub_field( 'afbeelding' ) . '">' : ''; ?>
 						</div>
 
 					</div>
@@ -144,9 +144,11 @@ if ( have_rows( 'secties' ) ):
 					<div class="row entry-content">
 
 						<div class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm-12 highlight-video">
-							<?= do_shortcode('[video width="780" src="' . get_sub_field( 'video' ) . '"]'); ?>
-<!--							<img-->
-<!--								src="--><?//= get_sub_field( 'video_afbeelding' ); ?><!--">-->
+							<?= do_shortcode( '[video width="780" src="' . get_sub_field( 'video' ) . '"]' ); ?>
+							<img class="highlight-play"
+								src="<?= get_sub_field( 'video_afbeelding' ); ?>">
+
+							<a href="#" class="btn highlight-btn"><i class="glyphicon glyphicon-play"></i><?= __( 'Bekijk de demo', 'privacyzeker' ); ?></a>
 						</div>
 
 					</div>
