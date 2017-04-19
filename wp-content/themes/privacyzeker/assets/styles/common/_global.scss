@@ -80,11 +80,53 @@ img {
       //padding-bottom: 0;
       margin-bottom: -180px;
 
-      img {
+      .highlight-video {
+        padding: 0;
         position: relative;
         top: -180px;
         box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+
+        .mejs-container {
+          background-color: $brand-tertiary;
+        }
+
+        .mejs-overlay-button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 200px;
+          height: 50px;
+          margin: -25px 0 0 -100px;
+
+          padding: 12px 18px;
+          font-family: "Lato", sans-serif;
+          font-size: 18px;
+          background-image: none;
+          background-color: $brand-primary;
+
+          border-radius: 4px;
+
+          &:before {
+            @extend .glyphicon;
+            @extend .glyphicon-play;
+
+            color: $brand-tertiary;
+            margin-right: 20px;
+            font-size: 24px;
+          }
+
+          &:after {
+            content: 'Bekijk de demo';
+            color: #fff;
+            font-size: 18px;
+            position: relative;
+            top: -4px;
+          }
+        }
       }
+
+      //img {
+      //}
     }
 
     &.section-3_icoonblokken {

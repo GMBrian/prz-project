@@ -143,9 +143,10 @@ if ( have_rows( 'secties' ) ):
 
 					<div class="row entry-content">
 
-						<div class="col-lg-8 col-lg-push-2 col-md-12 highlight-video">
-							<img
-								src="<?= get_sub_field( 'video_afbeelding' ); ?>">
+						<div class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm-12 highlight-video">
+							<?= do_shortcode('[video width="780" src="' . get_sub_field( 'video' ) . '"]'); ?>
+<!--							<img-->
+<!--								src="--><?//= get_sub_field( 'video_afbeelding' ); ?><!--">-->
 						</div>
 
 					</div>
