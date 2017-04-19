@@ -85,9 +85,9 @@ var cssTasks = function(filename) {
     .pipe(function() {
       return gulpif(enabled.maps, sourcemaps.init());
     })
-    .pipe(function() {
-      return gulpif('*.less', less());
-    })
+    // .pipe(function() {
+    //   return gulpif('*.less', less());
+    // })
     .pipe(function() {
       return gulpif('*.scss', sass({
         outputStyle: 'nested', // libsass doesn't support expanded yet
@@ -224,12 +224,12 @@ gulp.task('images', function() {
 // ### JSHint
 // `gulp jshint` - Lints configuration JSON and project JS.
 gulp.task('jshint', function() {
-  return gulp.src([
-    'bower.json', 'gulpfile.js'
-  ].concat(project.js))
-    .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
+  // return gulp.src([
+  //   'bower.json', 'gulpfile.js'
+  // ].concat(project.js))
+  //   .pipe(jshint())
+  //   .pipe(jshint.reporter('jshint-stylish'))
+  //   .pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
 });
 
 // ### Clean

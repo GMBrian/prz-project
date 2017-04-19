@@ -1,1 +1,106 @@
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: $text-primary;
+}
 
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-style: italic;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.8em;
+  font-size: 1.3em;
+  color: $text-primary;
+  margin: 20px 0;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  padding: 12px 18px;
+  font-family: "Lato", sans-serif;
+  background-color: $brand-primary;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.main {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  p {
+
+  }
+
+  .pre-section-uitgelichte_video {
+    height: 160px;
+    background-color: $brand-tertiary;
+  }
+
+  .section {
+    padding: 50px 0;
+
+    .tekst-col {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &.section-tekst,
+    &.section-tekst_afbeelding,
+    &.section-afbeelding_tekst {
+
+      img {
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+      }
+
+    }
+
+    &.section-uitgelichte_video {
+      //padding-bottom: 0;
+      margin-bottom: -180px;
+
+      img {
+        position: relative;
+        top: -180px;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &.section-3_icoonblokken {
+
+      .icon-col {
+        text-align: center;
+
+        h4 {
+          font-style: normal;
+          margin: 40px 0 10px;
+        }
+
+        p {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}

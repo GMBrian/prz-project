@@ -1,0 +1,32 @@
+.footer-info {
+  padding: 60px 0 50px;
+  background-color: $brand-primary;
+  text-align: center;
+
+  p.footer-contact-info {
+    margin: 50px 0 0;
+    color: #fff;
+
+    span {
+      display: inline-block;
+      margin: 0 30px;
+    }
+
+    .glyphicon {
+      margin: 0 10px;
+    }
+  }
+}
+
+.footer-copyright {
+  background-color: #2f5457;
+  text-align: center;
+  height: 50px;
+
+  p.copyright {
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    margin: 0;
+    line-height: 50px;
+  }
+}

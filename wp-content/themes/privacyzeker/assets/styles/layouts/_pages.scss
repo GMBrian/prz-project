@@ -1,0 +1,66 @@
+div.wpcf7 {
+  background-color: $brand-tertiary;
+  padding: 30px 50px 50px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input:not([type='submit']),
+  textarea {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-weight: normal;
+    font-size: 0.9em;
+    font-family: "Lato", sans-serif;
+    border: #b0d0d2 1px solid;
+
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder {
+      color: #b0d0d2;
+    }
+  }
+
+  span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-weight: normal;
+    font-size: 0.9em;
+    font-family: "Lato", sans-serif;
+    display: block;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  input[type='submit'] {
+    padding: 12px 18px;
+    font-family: "Lato", sans-serif;
+    background-color: $brand-primary;
+    color: #fff;
+    border-radius: 4px;
+    float: right;
+    border: none;
+  }
+
+  div.wpcf7-validation-errors {
+    border-radius: 4px;
+    background: white;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    padding: 20px;
+  }
+
+  .required-fields-comment {
+    font-size: 0.9em;
+  }
+}
