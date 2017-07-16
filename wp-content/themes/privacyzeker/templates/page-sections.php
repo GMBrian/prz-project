@@ -133,27 +133,52 @@ if ( have_rows( 'secties' ) ):
 
 		<?php elseif ( get_row_layout() == 'uitgelichte_video' ) : ?>
 
-			<div class="pre-section-<?= get_row_layout(); ?>"></div>
+            <div class="pre-section-<?= get_row_layout(); ?>"></div>
 
-			<div <?= get_sub_field( 'sectie_id' ) ? ' id="' . get_sub_field( 'sectie_id' ) . '" ' : ''; ?>
-				class="section section-<?= get_row_layout(); ?> <?= get_sub_field( 'sectie_id' ) ? get_sub_field( 'sectie_id' ) : ''; ?>"
+            <div <?= get_sub_field( 'sectie_id' ) ? ' id="' . get_sub_field( 'sectie_id' ) . '" ' : ''; ?>
+                    class="section section-<?= get_row_layout(); ?> <?= get_sub_field( 'sectie_id' ) ? get_sub_field( 'sectie_id' ) : ''; ?>"
 				<?= get_sub_field( 'achtergrondkleur' ) ? ' style="background-color:' . get_sub_field( 'achtergrondkleur' ) . '" ' : ''; ?>>
 
-				<div class="container">
+                <div class="container">
 
-					<div class="row entry-content">
+                    <div class="row entry-content">
 
-						<div class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm-12 highlight-video">
+                        <div class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm-12 highlight-video">
 							<?= do_shortcode( '[video width="780" src="' . get_sub_field( 'video' ) . '"]' ); ?>
-							<img class="highlight-play"
-								src="<?= get_sub_field( 'video_afbeelding' ); ?>">
+                            <img class="highlight-play"
+                                 src="<?= get_sub_field( 'video_afbeelding' ); ?>">
 
-							<a href="#" class="btn highlight-btn"><i class="glyphicon glyphicon-play"></i><?= __( 'Bekijk de demo', 'privacyzeker' ); ?></a>
-						</div>
+                            <a href="#" class="btn highlight-btn"><i class="glyphicon glyphicon-play"></i><?= __( 'Bekijk de demo', 'privacyzeker' ); ?></a>
+                        </div>
 
-					</div>
-				</div>
-			</div>
+                    </div>
+                </div>
+            </div>
+
+		<?php elseif ( get_row_layout() == 'call_to_action' ) : ?>
+
+            <div class="pre-section-<?= get_row_layout(); ?>"></div>
+
+            <div <?= get_sub_field( 'sectie_id' ) ? ' id="' . get_sub_field( 'sectie_id' ) . '" ' : ''; ?>
+                    class="section section-<?= get_row_layout(); ?> <?= get_sub_field( 'sectie_id' ) ? get_sub_field( 'sectie_id' ) : ''; ?>"
+				<?= get_sub_field( 'achtergrondkleur' ) ? ' style="background-color:' . get_sub_field( 'achtergrondkleur' ) . '" ' : ''; ?>>
+
+                <div class="container">
+
+                    <div class="row entry-content">
+
+                        <div class="col-lg-10 col-lg-push-1 col-md-12 text-center">
+
+                            <h3 class="cta-header"><?= get_sub_field( 'headline' ); ?></h3>
+
+                            <a class="btn" target="<?= get_sub_field('knop_gedrag'); ?>" href="<?= get_sub_field('knop_tekst'); ?>"><?= get_sub_field('knop_tekst'); ?></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
 			<?php
 		endif;
 

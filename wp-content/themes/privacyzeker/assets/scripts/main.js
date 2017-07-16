@@ -19,6 +19,14 @@
         'common': {
             init: function () {
                 // JavaScript to be fired on all pages
+
+                $(window).scroll(function () {
+                    var sticky = $('body'),
+                        scroll = $(window).scrollTop();
+
+                    if (scroll >= 180) sticky.addClass('fixed');
+                    else sticky.removeClass('fixed');
+                });
             },
             finalize: function () {
                 // JavaScript to be fired on all pages, after page specific JS is fired
