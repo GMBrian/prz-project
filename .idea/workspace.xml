@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f23aad5-cfe7-434c-beb0-4e0ff56836f3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/privacyzeker/404.php" afterPath="$PROJECT_DIR$/wp-content/themes/privacyzeker/404.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/privacyzeker/assets/scripts/main.js" afterPath="$PROJECT_DIR$/wp-content/themes/privacyzeker/assets/scripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/privacyzeker/assets/styles/common/_global.scss" afterPath="$PROJECT_DIR$/wp-content/themes/privacyzeker/assets/styles/common/_global.scss" />
@@ -857,12 +854,12 @@
       <workItem from="1493543199299" duration="186000" />
       <workItem from="1493543403528" duration="889000" />
       <workItem from="1493667686119" duration="1268000" />
-      <workItem from="1500204786223" duration="9976000" />
+      <workItem from="1500204786223" duration="10054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39197000" />
+    <option name="totallyTimeSpent" value="39275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1596" y="0" width="2244" height="2130" extended-state="0" />
@@ -927,6 +924,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Footer kleur, knop aanpassingen, extra sectie voor CTA, header met CTA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Footer kleur, knop aanpassingen, extra sectie voor CTA, header met CTA" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\xampp\htdocs\privacyzeker</wordpressPath>
