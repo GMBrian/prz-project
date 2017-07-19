@@ -14,26 +14,28 @@
   }
 }
 
-body.fixed {
-  padding-top: 110px;
+@media screen and (min-width: 992px) {
+  body.fixed {
+    padding-top: 110px;
 
-  .banner {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    height: 80px;
+    .banner {
+      position: fixed;
+      z-index: 100;
+      width: 100%;
+      height: 80px;
 
-    top: 0;
-    left: 0;
-    right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
 
-    .brand {
-      margin: 17px 0;
-      max-width: 210px;
-    }
+      .brand {
+        margin: 17px 0;
+        max-width: 210px;
+      }
 
-    .nav-primary ul.nav > li > a {
-      margin: 16px 20px;
+      .nav-primary ul.nav > li > a {
+        margin: 16px 20px;
+      }
     }
   }
 }
