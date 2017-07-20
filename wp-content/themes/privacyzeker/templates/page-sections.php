@@ -171,7 +171,7 @@ if ( have_rows( 'secties' ) ):
 
                             <h3 class="cta-header"><?= get_sub_field( 'headline' ); ?></h3>
 
-                            <a class="btn" target="<?= get_sub_field('knop_gedrag'); ?>" href="<?= get_sub_field('knop_tekst'); ?>"><?= get_sub_field('knop_tekst'); ?></a>
+                            <a class="btn" target="<?= get_sub_field('knop_gedrag'); ?>" href="<?= get_sub_field('knop_url'); ?>"><?= get_sub_field('knop_tekst'); ?></a>
                         </div>
 
                     </div>

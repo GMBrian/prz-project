@@ -11,9 +11,20 @@
     margin: 50px 0 0;
     color: #fff;
 
+    a {
+      color: #fff;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+      }
+    }
+
     span {
       display: inline-block;
       margin: 0 30px;
+      color: #fff;
     }
 
     .glyphicon {
@@ -32,5 +43,15 @@
     color: #fff;
     margin: 0;
     line-height: 50px;
+
+    a {
+      color: #fff;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+      }
+    }
   }
 }
